@@ -1,0 +1,43 @@
+{
+    "logs" : [
+        {
+            "id" : 1,
+            "message" : "Changed harddrive on workstation 005",
+            "attention" : false,
+            "date" : "03-02-2021",
+            "tech" : "Sam"
+        },
+        {
+            "id" : 2,
+            "message" : "Cleaned cpu fan on workstation 007",
+            "attention" : false,
+            "date" : "03-03-2021",
+            "tech" : "Brad"
+        },
+        {
+            "id" : 3,
+            "message" : "Antivirus install on main system",
+            "attention" : false,
+            "date" : "03-04-2021",
+            "tech" : "Yash"
+        }
+    ],
+
+    "techs" : [
+        {
+            "id" : 1,
+            "firstName" : "Sam",
+            "lasName" : "Sick"
+        },
+        {
+            "id" : 2,
+            "firstName" : "Yash",
+            "lasName" : "Jain"
+        },
+        {
+            "id" : 3,
+            "firstName" : "Brad",
+            "lasName" : "Shaw"
+        }
+    ]
+}
