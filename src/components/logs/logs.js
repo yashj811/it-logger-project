@@ -1,25 +1,19 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect } from "react";
+import {connect} from 'react-redux';
+import {getLogs} from '../../actions/logActions'
 import LogItems from "./logitems";
 
-const Logs = () => {
-  const [logs, setLogs] = useState([]);
-  const [loading, setLoading] = useState(false);
+const Logs = ({logs, loading, getLogs}) => {
+ 
+
 
   useEffect(() => {
     getLogs();
   }, []);
 
-  const getLogs = async () => {
-    setLoading(true);
 
-    const res = await fetch('/logs');
-    const data = await res.json();
 
-    setLogs(data);
-    setLoading(false);
-  };
-
-  if (loading) {
+  if (loading || logs === null) {
     return <Fragment>Loading...</Fragment>;
   }
 
@@ -44,4 +38,9 @@ const Logs = () => {
   );
 };
 
-export default Logs;
+const mapStateToProps = state => ({
+  logs : state.log.logs,
+  loading : state.log.loading
+});
+
+export default connect(mapStateToProps, {getLogs})(Logs);
