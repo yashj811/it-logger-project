@@ -35,11 +35,7 @@ const Logs = () => {
         ) : (
           logs.map((log) => {
             return (
-              <li className="collection-item" key={log.id}>
-                  {log.message} 
-                {" "}
-                <LogItems  message={log.message} />{" "}
-              </li>
+            <LogItems key={log.id} log={log}/>
             );
           })
         )}

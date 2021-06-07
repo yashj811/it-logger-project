@@ -1,8 +1,11 @@
 import React, { useEffect, Fragment } from "react";
-import SearchBar from "./components/layout/SearchBar";
-import Logs from './components/logs/logs';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
+import SearchBar from "./components/layout/SearchBar";
+import Logs from './components/logs/logs';
+import AddBtn from './components/layout/AddBtn';
+import AddLogModal from './components/logs/addlogmodal';
+
 
 const App = () => {
   useEffect(() => {
@@ -10,8 +13,14 @@ const App = () => {
   });
   return (
     <Fragment>
-      <SearchBar />
+        <SearchBar />
+      <div className='container'>
+    
+      <AddLogModal />
       <Logs />
+      <AddBtn />
+      </div>
+  
     </Fragment>
   );
 };

@@ -3,7 +3,7 @@
         {
             "id" : 1,
             "message" : "Changed harddrive on workstation 005",
-            "attention" : false,
+            "attention" : true,
             "date" : "03-02-2021",
             "tech" : "Sam"
         },
