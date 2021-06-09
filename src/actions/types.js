@@ -5,3 +5,5 @@ export const UPDATE_LOG = 'UPDATE_LOG';
 export const SEARCH_LOGS = 'SEARCH_LOGS';
 export const SET_LOADING = 'SET_LOADING';
 export const LOGS_ERROR = 'LOGS_ERROR';
+export const SET_CURRENT = 'SET_CURRENT';
+export const CLEAR_CURRENT = 'CLEAR_CURRENT';

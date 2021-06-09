@@ -8,6 +8,7 @@ import SearchBar from "./components/layout/SearchBar";
 import Logs from './components/logs/logs';
 import AddBtn from './components/layout/AddBtn';
 import AddLogModal from './components/logs/addlogmodal';
+import EditLogModal from './components/logs/editlogmodal';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <div className='container'>
     
       <AddLogModal />
+      <EditLogModal />
       <Logs />
       <AddBtn />
       </div>

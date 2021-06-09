@@ -1,11 +1,11 @@
 {
   "logs": [
     {
-      "message": "system update",
+      "id": 1,
+      "message": "New Update 1",
       "attention": true,
       "tech": "Yash Jain",
-      "date": "2021-06-07T18:14:20.191Z",
-      "id": 1
+      "date": "2021-06-09T11:17:07.052Z"
     }
   ],
   "techs": [
